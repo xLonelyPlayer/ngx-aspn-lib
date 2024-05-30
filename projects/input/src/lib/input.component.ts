@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-input',
+  selector: 'lib-ngx-aspn-input',
   standalone: true,
   imports: [],
   template: `
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <input type="text" (change)="handleOnChange($event)">
   `,
 })
-export class InputComponent {
+export class NgxAspnInputComponent {
   handleOnChange(e: Event): void {
     console.log('input Event', e);
   }

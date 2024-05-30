@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-button',
+  selector: 'lib-ngx-aspn-button',
   standalone: true,
   imports: [],
   template: `
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <button (click)="handleOnClick($event)">Click me</button>
   `,
 })
-export class ButtonComponent {
+export class NgxAspnButtonComponent {
   handleOnClick(e: Event): void {
     console.log('button Event', e);
   }

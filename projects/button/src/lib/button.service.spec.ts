@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ButtonService } from './button.service';
+import { NgxAspnButtonService } from './button.service';
 
-describe('ButtonService', () => {
-  let service: ButtonService;
+describe('NgxAspnButtonService', () => {
+  let service: NgxAspnButtonService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ButtonService);
+    service = TestBed.inject(NgxAspnButtonService);
   });
 
   it('should be created', () => {

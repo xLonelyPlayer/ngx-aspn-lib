@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InputComponent } from './input.component';
+import { NgxAspnInputComponent } from './input.component';
 
-describe('InputComponent', () => {
-  let component: InputComponent;
-  let fixture: ComponentFixture<InputComponent>;
+describe('NgxAspnInputComponent', () => {
+  let component: NgxAspnInputComponent;
+  let fixture: ComponentFixture<NgxAspnInputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InputComponent]
+      imports: [NgxAspnInputComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(InputComponent);
+
+    fixture = TestBed.createComponent(NgxAspnInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

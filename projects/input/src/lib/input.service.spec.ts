@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { InputService } from './input.service';
+import { NgxAspnInputService } from './input.service';
 
-describe('InputService', () => {
-  let service: InputService;
+describe('NgxAspnInputService', () => {
+  let service: NgxAspnInputService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(InputService);
+    service = TestBed.inject(NgxAspnInputService);
   });
 
   it('should be created', () => {
