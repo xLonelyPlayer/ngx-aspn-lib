@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <p>button works!</p>
     <button (click)="handleOnClick($event)">Click me</button>
   `,
 })
