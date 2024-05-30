@@ -13,6 +13,9 @@
       "button": [
         "./dist/button"
       ],
+      "common": [
+        "./dist/common"
+      ],
       "input": [
         "./dist/input"
       ]
