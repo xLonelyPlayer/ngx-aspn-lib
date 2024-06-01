@@ -7,7 +7,7 @@ Simple component library for Angular.
 
 ## How to develop
 
-Run `ng serve` and you should be able to change
+Run `ng serve` and you should be able to develop with the live reload feature.
 
 ## Project structure
 

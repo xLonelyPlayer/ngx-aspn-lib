@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <button (click)="handleOnClick($event)">Click ddddd me</button>
+    <button (click)="handleOnClick($event)">Clickd ddddd me</button>
   `,
 })
 export class NgxAspnButtonComponent {
