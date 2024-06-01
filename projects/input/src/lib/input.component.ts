@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NgxAspnCommonService } from 'common';
 
 @Component({
-  selector: 'lib-ngx-aspn-input',
+  selector: 'ngx-aspn-input',
   standalone: true,
   imports: [],
   template: `

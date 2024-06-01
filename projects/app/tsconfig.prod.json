@@ -4,11 +4,6 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
     "types": [],
-    "paths": {
-      "button": ["../button/src/public-api.ts"],
-      "input": ["../input/src/public-api.ts"],
-      "common": ["../common/src/public-api.ts"],
-    },
   },
   "files": [
     "src/main.ts"

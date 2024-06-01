@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/button",
       "sourceRoot": "projects/button/src",
-      "prefix": "lib",
+      "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -49,7 +49,7 @@
       "projectType": "library",
       "root": "projects/input",
       "sourceRoot": "projects/input/src",
-      "prefix": "lib",
+      "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -91,7 +91,7 @@
       "projectType": "library",
       "root": "projects/common",
       "sourceRoot": "projects/common/src",
-      "prefix": "lib",
+      "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -149,7 +149,7 @@
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/app/tsconfig.app.json",
+            "tsConfig": "projects/app/tsconfig.prod.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/app/src/favicon.ico",
@@ -177,6 +177,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "tsConfig": "projects/app/tsconfig.app.json",
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
