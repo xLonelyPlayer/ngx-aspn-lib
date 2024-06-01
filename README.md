@@ -1,27 +1,39 @@
 # ngx-aspn-lib
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+This project was generated with
+[Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
-## Development server
+Simple component library for Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## How to develop
 
-## Code scaffolding
+Run `ng serve` and you should be able to change
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project structure
 
-## Build
+Running `ng serve` will start a development server to modify components
+and see results immediately by default on `http://localhost:4200`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Library components are located on `projects/`.
 
-## Running unit tests
+The `projects/app/` folder is the project with the `projectType: "application"`
+used to test the components in development mode.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The `projects/common/` folder is used to share code between libraries.
 
-## Running end-to-end tests
+Add any needed path inside the `app/tsconfig.app.json` file if you add any
+libraries to get the reload behavior to test it while running `ng serve`. This
+paths will not be used when build for production.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Testing components
 
-## Further help
+Lets say you want to test the `@ngx-aspn-lib/input` component, all you need to
+do is run `ng test input` and it will execute
+[Karma](https://karma-runner.github.io) displaying the tests results.
+Remeber that it behaves like the `ng serve` command and will reload any save
+you do on the `.spec.ts` file.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Components documentation
+
+Use the README.md inside each component folder, such as `projects/input` as it
+will be used to be shown on the npm page, if you ever publish it to the registry.
