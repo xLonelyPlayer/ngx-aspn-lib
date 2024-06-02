@@ -12,7 +12,7 @@ Run `ng serve` and you should be able to develop with the live reload feature.
 ## Project structure
 
 Running `ng serve` will start a development server to modify components
-and see results immediately by default on `http://localhost:4200`.
+and see results immediately on `http://localhost:4200` by default.
 
 Library components are located on `projects/`.
 
@@ -23,7 +23,7 @@ The `projects/common/` folder is used to share code between libraries.
 
 Add any needed path inside the `app/tsconfig.app.json` file if you add any
 libraries to get the reload behavior to test it while running `ng serve`. This
-paths will not be used when build for production.
+paths will not be used when building for production.
 
 ## Testing components
 
