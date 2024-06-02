@@ -3,12 +3,17 @@
 
 // base & layout
 @import 'base';
+@import 'breakpoints';
+@import 'grid';
 
 // colors
-
+@import 'colors';
 
 // components (buttons, card, navbar)
-@import './components/button';
-
+@import 'components/card';
+@import 'components/button';
+@import 'components/navbar';
+@import 'components/badge';
 
 // utilities (padding, margin, opacity)
+@import 'utilities';

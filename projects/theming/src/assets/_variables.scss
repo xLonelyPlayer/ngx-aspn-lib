@@ -1,3 +1,33 @@
 $primary: #1B1B1E;
 $secondary: #373F51;
 $accent: #58A4B0;
+$success: #22ad29;
+$error: #d32752;
+$info: #f6c31c;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "accent": $accent,
+  "success": $success,
+  "error": $error,
+  "info": $info,
+);
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
