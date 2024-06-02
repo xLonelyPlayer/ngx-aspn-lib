@@ -4,3 +4,6 @@ components:
 
 app:
 	ng build app
+
+theming:
+	ng build theming && npm install .\dist\theming\

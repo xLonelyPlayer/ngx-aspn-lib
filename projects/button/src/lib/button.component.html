@@ -1,0 +1,11 @@
+<button class="btn btn-primary p-1">
+  <span #iconLeft [ngClass]="{'btn-inside-left': iconLeft?.hasChildNodes() && btnLabel?.hasChildNodes()}">
+    <ng-content select="[left]"></ng-content>
+  </span>
+  <span #btnLabel>
+    <ng-content select="span"></ng-content>
+  </span>
+  <span #iconRight [ngClass]="{'btn-inside-right': iconRight?.hasChildNodes() && btnLabel?.hasChildNodes()}">
+    <ng-content select="[right]"></ng-content>
+  </span>
+</button>

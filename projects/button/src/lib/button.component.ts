@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'ngx-aspn-button',
   standalone: true,
-  imports: [],
-  template: `
-    <button (click)="handleOnClick($event)">Clickd ddddd me</button>
-  `,
+  imports: [CommonModule],
+  templateUrl: './button.component.html',
+  styleUrl: '../../assets/_index.scss'
 })
 export class NgxAspnButtonComponent {
-  handleOnClick(e: Event): void {
-    console.log('button Event', e);
-  }
+
+  @ViewChild('iconLeft') iconLeft!: ElementRef<HTMLSpanElement>;
+  @ViewChild('iconRight') iconRight!: ElementRef<HTMLSpanElement>;
+  @ViewChild('btnLabel') btnLabel!: ElementRef<HTMLSpanElement>;
+
 }
