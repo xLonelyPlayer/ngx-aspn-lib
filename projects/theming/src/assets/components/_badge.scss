@@ -12,8 +12,12 @@
   @include badge;
 }
 
-@each $key, $val in $colors {
-  .badge-#{$key}{
-    @include badge($val);
+@each $theme, $map in $themes {
+  .#{$theme} * {
+    @each $key, $val in $map {
+      .badge-#{$key}{
+        @include badge($val);
+      }
+    }
   }
 }

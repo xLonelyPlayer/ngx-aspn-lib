@@ -18,9 +18,13 @@
   }
 }
 
-@each $key, $val in $colors {
-  .navbar-#{$key} {
-    @extend .navbar;
-    background-color: $val;
+@each $theme, $map in $themes {
+  .#{$theme} * {
+    @each $key, $val in $theme {
+      .navbar-#{$key} {
+        @extend .navbar;
+        background-color: $val;
+      }
+    }
   }
 }

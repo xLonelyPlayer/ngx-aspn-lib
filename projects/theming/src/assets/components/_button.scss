@@ -17,19 +17,23 @@
   }
 }
 
-@each $key, $val in $colors {
-  .btn-#{$key} {
-    @include btn($val);
-    &:hover {
-      background-color: lighten($val, 8);
-    }
-  }
+@each $theme, $map in $themes {
+  .#{$theme} * {
+    @each $key, $val in $map {
+      .btn-#{$key} {
+        @include btn($val);
+        &:hover {
+          background-color: lighten($val, 8);
+        }
+      }
 
-  .btn-outlined-#{$key} {
-    @include btn(#fff);
-    border: $base-border-thickness solid $val;
-    &:hover {
-      background-color: $val;
+      .btn-outlined-#{$key} {
+        @include btn(#fff);
+        border: $base-border-thickness solid $val;
+        &:hover {
+          background-color: $val;
+        }
+      }
     }
   }
 }
