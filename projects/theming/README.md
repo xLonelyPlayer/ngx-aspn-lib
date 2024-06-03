@@ -1,24 +1,48 @@
-# Theming
+# ngx-aspn-theming
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
-## Code scaffolding
+Simple theming and css utilities in SCSS.
 
-Run `ng generate component component-name --project theming` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project theming`.
-> Note: Don't forget to add `--project theming` or else it will be added to the default project in your `angular.json` file. 
+## Usage
 
-## Build
+Declare the theme you would like at the top level of your app.
+```html
+<!-- Set your desired theme as a class here -->
+<div class="eerie-charcoal">
+  <div>
+    <!-- Your entire application goes below from here -->
+  </div>
+</div>
+```
 
-Run `ng build theming` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Components styling
 
-## Publishing
+### Card
+TODO
 
-After building your library with `ng build theming`, go to the dist folder `cd dist/theming` and run `npm publish`.
+### Button
+TODO
 
-## Running unit tests
+### Navbar
+TODO
 
-Run `ng test theming` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Preview
 
-## Further help
+### `eerie-charcoal`
+TODO
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### `hookers-green-olivine`
+TODO
+
+### `lazuli-cool-gray`
+TODO
+
+### `murrey-crayola`
+TODO
+
+### `purple-violet`
+TODO
+
+## Demo
+TODO
