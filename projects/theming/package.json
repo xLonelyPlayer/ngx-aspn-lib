@@ -1,6 +1,6 @@
 {
   "name": "@ngx-aspn-lib/theming",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "exports": {
     ".": {
       "sass": "./src/assets/**/*.scss"
