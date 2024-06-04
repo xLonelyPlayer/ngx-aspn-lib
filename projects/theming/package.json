@@ -1,14 +1,10 @@
 {
-  "name": "common",
-  "version": "0.0.3",
+  "name": "@ngx-aspn-lib/theming",
+  "version": "0.0.4",
   "exports": {
     ".": {
-      "sass": "./assets/**/*.*"
+      "sass": "./src/assets/**/*.scss"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xLonelyPlayer/ngx-aspn-lib.git"
   },
   "peerDependencies": {
     "@angular/common": "^17.3.0",

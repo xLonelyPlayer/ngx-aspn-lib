@@ -18,6 +18,9 @@
       ],
       "input": [
         "./dist/input"
+      ],
+      "theming": [
+        "./dist/theming"
       ]
     },
     "esModuleInterop": true,
